@@ -1,4 +1,3 @@
-import './assets/styles/app.scss'
 import { Button } from 'antd'
 import store from '@/store'
 
