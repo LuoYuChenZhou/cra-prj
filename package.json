@@ -23,6 +23,9 @@
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2"
   },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
+  },
   "scripts": {
     "start": "craco start --config craco.config.js",
     "build": "craco build",

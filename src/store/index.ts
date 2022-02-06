@@ -2,7 +2,7 @@ import { createStore } from 'redux';
 import Reducers from './reducer';
 import { IStore } from './interface'
 
-const initialState: IStore = {
+export const initialState: IStore = {
     userInfo: {
         id: '',
         name: '',
@@ -16,7 +16,8 @@ const initialState: IStore = {
 const store = createStore(Reducers);
 
 // 通过unsubscribe可以解除订阅
-const unsubscribe = store.subscribe(() =>
+// eslint-disable-next-line
+export const unsubscribe = store.subscribe(() =>
   console.log(store.getState())
 )
 

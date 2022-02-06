@@ -10,7 +10,7 @@ const funObj: any = {
   }
 }
 
-export default function (state: IStore | null = null, action: any) {
+export default function perFunc(state: IStore | null = null, action: any) {
   // 不能使用 funObj[PMS_SetUserInfo]的形式，所以只能一个个switch了
   switch (action.type) {
     case 'PMS_SetUserInfo':
